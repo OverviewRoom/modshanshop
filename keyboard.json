@@ -1,0 +1,26 @@
+{
+    "one_time": true,
+    "buttons": [
+      [{
+        "action": {
+          "type": "text",
+          "label": "🎯 Сайт"
+        },
+        "color": "primary"
+      },
+        {
+          "action": {
+            "type": "text",
+            "label": "🌚 О Нас"
+          },
+          "color": "secondary"
+        },
+        {
+            "action": {
+              "type": "text",
+              "label": "🌏 Правила"
+            },
+            "color": "secondary"
+          }]
+    ]
+  }
