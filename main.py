@@ -1,10 +1,9 @@
 import vk_api, random
 import sqlite3
-import os
 
 from vk_api.longpoll import VkLongPoll, VkEventType
 
-vk_session = os.environ.get(vk_api.VkApi('BOT_TOKEN'))
+vk_session = vk_api.VkApi(token="f8b662009fa6ff4007e8bd1a712beabab0ccba4b3c2f3bf7a0f86f116db2f51a15932975a5d4cfc666c9a")
 
 longpoll = VkLongPoll(vk_session)
 
