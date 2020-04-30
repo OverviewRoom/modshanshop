@@ -4,7 +4,7 @@
       [{
         "action": {
           "type": "text",
-          "label": "🎯 Сайт"
+          "label": "🎯 Купить"
         },
         "color": "primary"
       }],
