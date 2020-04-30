@@ -4,8 +4,8 @@ import os
 
 from vk_api.longpoll import VkLongPoll, VkEventType
  
-TOKEN = os.environ.get('TOKEN_BOT')
-vk_session = vk_api.VkApi(token = TOKEN_BT)
+TOKEN_BOT = os.environ.get('TOKEN_BOT')
+vk_session = vk_api.VkApi(token = TOKEN_BOT)
 
 longpoll = VkLongPoll(vk_session)
 
