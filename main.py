@@ -212,14 +212,6 @@ while True:
                         random_id=random_id()
                     )    
 
-             elif event.text.lower() == "пошёл нахуй":
-                if get_user_wish(event.user_id) == 1:
-                    vk.messages.send(
-                        user_id=event.user_id,
-                        message="*зеркало*",
-                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
-                        random_id=random_id()
-                    )  
 
             elif event.text.lower() == "пошел на хуй":
                 if get_user_wish(event.user_id) == 1:
