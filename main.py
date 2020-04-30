@@ -5,7 +5,7 @@ import os
 from vk_api.longpoll import VkLongPoll, VkEventType
  
 TOKEN = os.environ.get('TOKEN_BOT')
-vk_session = vk_api.VkApi(token = TOKEN)
+vk_session = vk_api.VkApi(token = TOKEN_BT)
 
 longpoll = VkLongPoll(vk_session)
 
@@ -78,6 +78,7 @@ while True:
                         keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                         random_id=random_id()
                     )
+            
             elif event.text.lower() == "🌚 о нас":
                 if get_user_wish(event.user_id) == 1:
                     vk.messages.send(
@@ -103,14 +104,86 @@ while True:
                         random_id=random_id()
                     )
 
-            elif event.text.lower() == "⭐️ ХЗ":
+            elif event.text.lower() == "хуй соси":
                 if get_user_wish(event.user_id) == 1:
                     vk.messages.send(
                         user_id=event.user_id,
-                        message="💥 FAQ: https://vk.com/topic-183789286_39359574",
+                        message="Сам соси",
                         keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                         random_id=random_id()
                     )
+
+            elif event.text.lower() == "пидарас":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="Сам гандон",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )
+
+            elif event.text.lower() == "гандон":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="Пасть закрой, пёс",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )            
+
+            elif event.text.lower() == "сука":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="Сам сука",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )                 
+
+            elif event.text.lower() == "блять":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="Сам блять",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )                 
+
+            elif event.text.lower() == "блядь":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="Сам блядь",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )
+
+            elif event.text.lower() == "пидрила":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="А ты пёс",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )        
+
+            elif event.text.lower() == "питух":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="Шмара ёбаная",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )      
+
+            elif event.text.lower() == "шмара":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="Шмара ёбаная",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )    
 
             elif event.text.lower().startswith("!"):
                 if get_user_wish(event.user_id) == 1:
