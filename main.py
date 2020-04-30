@@ -64,7 +64,7 @@ while True:
             if event.text.lower() == "начать":
                 vk.messages.send(
                     user_id=event.user_id,
-                    message="Приветик!\nЯ бот Лёха говна лепёха.\nМогу я Вам чем-то помочь?",
+                    message="Приветик!\nНа связли Jim из технической поддержки.\nМогу я Вам чем-то помочь?",
                     keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                     random_id=random_id()
                 )
