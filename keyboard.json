@@ -21,6 +21,13 @@
               "label": "🌏 Правила"
             },
             "color": "secondary"
+          },
+          {
+            "action": {
+              "type": "text",
+              "label": "💥 FAQ"
+            },
+            "color": "secondary"
           }]
     ]
   }
