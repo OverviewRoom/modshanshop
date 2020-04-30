@@ -1,9 +1,8 @@
 import vk_api, random
 import sqlite3
-import os
 
 from vk_api.longpoll import VkLongPoll, VkEventType
-
+ 
 TOKEN = os.environ.get('BOT_TOKEN')
 vk_session = vk_api.VkApi(token = TOKEN)
 
@@ -90,7 +89,15 @@ while True:
                 if get_user_wish(event.user_id) == 1:
                     vk.messages.send(
                         user_id=event.user_id,
-                        message="🌏 Правила пользования: https://vk.com/topic-183789286_39359574",
+                        message="🌏 Правила: https://vk.com/topic-183789286_39359574",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )
+             elif event.text.lower() == "💥 FAQ":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="💥 Q: Кто мы такие?\nМы команда хакеров которые могут взломать любой пиратский сервер майнкрафт без смс и регистрации.\nВы можете присылать нам IP адреса серверов которые обманывают на команды или донат,
                         keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                         random_id=random_id()
                     )
