@@ -7,22 +7,22 @@
           "label": "🎯 Сайт"
         },
         "color": "primary"
-      },
-        {
+      }],
+        [{
           "action": {
             "type": "text",
             "label": "🌚 О Нас"
           },
           "color": "secondary"
-        },
-        {
+        }],
+        [{
             "action": {
               "type": "text",
-              "label": "🌏 Правила"
+              "label": "🌏 Пользовательское соглашение"
             },
             "color": "secondary"
-          },
-          {
+          }],
+          [{
             "action": {
               "type": "text",
               "label": "💥 FAQ"

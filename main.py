@@ -69,11 +69,11 @@ while True:
                     random_id=random_id()
                 )
 
-            elif event.text.lower() == "🎯 сайт":
+            elif event.text.lower() == "🎯 Сайт":
                 if get_user_wish(event.user_id) == 1:
                     vk.messages.send(
                         user_id=event.user_id,
-                        message="🎯 Наш сайт: https://modshanshop.ru",
+                        message="🎯 Что-нибудь купить можно тут: https://modshanshop.ru",
                         keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                         random_id=random_id()
                     )
@@ -81,31 +81,50 @@ while True:
                 if get_user_wish(event.user_id) == 1:
                     vk.messages.send(
                         user_id=event.user_id,
-                        message="🌚 Мы команда хакеров которые могут взломать любой пиратский сервер майнкрафт без смс и регистрации.\nВы можете присылать нам IP адреса серверов которые обманывают на команды или донат",
+                        message="🌚 Мы команда хакеров которые могут взломать любой пиратский сервер майнкрафт без смс и регистрации.\nВы можете присылать нам IP адреса серверов которые обманывают на команды или донат\nВид обращения: ! [IP]",
                         keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                         random_id=random_id()
                     )
-            elif event.text.lower() == "🌏 правила":
+            elif event.text.lower() == "🌏 пользовательское соглашение":
                 if get_user_wish(event.user_id) == 1:
                     vk.messages.send(
                         user_id=event.user_id,
-                        message="🌏 Правила: https://vk.com/topic-183789286_39359574",
+                        message="🌏 Пользовательское соглашение: https://vk.com/topic-183789286_39359574",
                         keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                         random_id=random_id()
                     )
-             elif event.text.lower() == "💥 FAQ":
+            elif event.text.lower() == "💥 faq":
                 if get_user_wish(event.user_id) == 1:
                     vk.messages.send(
                         user_id=event.user_id,
-                        message="💥 Q: Кто мы такие?\nМы команда хакеров которые могут взломать любой пиратский сервер майнкрафт без смс и регистрации.\nВы можете присылать нам IP адреса серверов которые обманывают на команды или донат,
+                        message="💥 Q: Кто мы такие?\nМы команда хакеров которые могут взломать любой пиратский сервер майнкрафт без смс и регистрации.\nВы можете присылать нам IP адреса серверов которые обманывают на команды или донат.\n\n💥Q: Где базируется команда разработчиков?\nБольшинство разработчиков из Санкт-Петербурга.",
                         keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                         random_id=random_id()
                     )
 
+            elif event.text.lower() == "⭐️ ХЗ":
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="💥 FAQ: https://vk.com/topic-183789286_39359574",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )
+
+            elif event.text.lower().startswith("!"):
+                if get_user_wish(event.user_id) == 1:
+                    vk.messages.send(
+                        user_id=event.user_id,
+                        message="Понял, принял. Переключаем ваш диалог на оператора. Мы уже занимаемся вашим вопросом, ответим в ближайшее время",
+                        keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
+                        random_id=random_id()
+                    )
+
+
             else:
                 vk.messages.send(
                     user_id=event.user_id,
-                    message="Неизвестная команда",
+                    message="Если хотите задать вопрос администратору - перед вашим вопросом напишите '!' ",
                     keyboard=open("keyboard.json", "r", encoding="UTF-8").read(),
                     random_id=random_id()
                 )
