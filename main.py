@@ -3,7 +3,7 @@ import sqlite3
 
 from vk_api.longpoll import VkLongPoll, VkEventType
  
-TOKEN = os.environ.get('BOT_TOKEN')
+TOKEN = os.environ.get('TOKEN_BOT')
 vk_session = vk_api.VkApi(token = TOKEN)
 
 longpoll = VkLongPoll(vk_session)
