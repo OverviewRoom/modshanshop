@@ -70,7 +70,7 @@ while True:
                     random_id=random_id()
                 )
 
-            elif event.text.lower() == "🎯 Купить":
+            elif event.text.lower() == "🎯 купить":
                 if get_user_wish(event.user_id) == 1:
                     vk.messages.send(
                         user_id=event.user_id,
