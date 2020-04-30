@@ -1,5 +1,6 @@
 import vk_api, random
 import sqlite3
+import os
 
 from vk_api.longpoll import VkLongPoll, VkEventType
  
